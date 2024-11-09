@@ -1,0 +1,243 @@
+.biz-udpgothic-regular {
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.biz-udpgothic-bold {
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff; /* 背景色を設定 */
+    border-bottom: 1px solid #ccc; /* 下に境界線を追加 */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影を追加して立体感を出す */
+    z-index: 1000; /* コンテンツの上に表示するために z-index を設定 */
+
+}
+.logo {
+    display: block;
+    justify-content: space-between; /* 左右にコンテンツを分けて配置 */
+    align-items: center; /* 縦方向に中央揃え */   
+}
+
+.logo-left, .logo-right {
+    width: auto; /* 幅は自動で調整 */
+    height: 80px; /* 高さは自動で調整 */
+    display: flex;
+    align-items: center; /* 垂直方向に中央揃え */
+}
+
+.logo-left img, .logo-right img {
+    max-width: 100%; /* コンテナの幅に合わせて最大幅を設定 */
+    height: auto; /* 高さを自動で調整 */
+}
+
+<!--以下表CSS-->  
+<style>
+     /* 表のCSSここタイトル行の背景色 */
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    table.d-han {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid rgb(39, 55, 127);
+    }
+table.d-han td, table.d-han th {
+        border: 1px solid rgb(39, 55, 127);
+        padding: 5px;
+        text-align: center;
+        line-height: 1.25; /* 125% の行の高さ */
+    }
+/* 列幅をパーセンテージで設定 */
+    table.d-han th:nth-child(1), table.d-han td:nth-child(1) { width: 40%; }
+    table.d-han th:nth-child(2), table.d-han td:nth-child(2) { width: 30%; }
+    table.d-han th:nth-child(3), table.d-han td:nth-child(3) { width: 30%; }
+     /* タイトル行の背景色 */
+            table.d-han tr:first-child {
+        background-color: #ff0000; /* タイトル行1の背景色 */
+        color: #FFFFFF; /* タイトル行1のフォントカラー */
+    }
+    table.d-han tr:nth-child(2) {
+        background-color: #d0e0f0; /* タイトル行2の背景色 */
+    }
+     /* タイトル行2の各セルに個別の背景色を設定 */
+            table.d-han tr:nth-child(2) td:nth-child(1) {
+        background-color: #ffcccc; /* 2行目1列目の背景色 */
+    }
+    table.d-han tr:nth-child(2) td:nth-child(2) {
+        background-color: #ffffcc; /* 2行目2列目の背景色 */
+    }
+    table.d-han tr:nth-child(2) td:nth-child(3) {
+        background-color: #ccffff; /* 2行目3列目の背景色 */
+    }
+    @media (max-width: 768px) {
+        table.d-han {
+            font-size: 12px;
+        }
+    }
+</style>
+<!--表CSSここまで-->  
+
+
+<!--以下グローバルメニュー 修正-->
+
+<style>
+/* 基本スタイル */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ヘッダーのスタイル */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-left img, .logo-right img {
+    height: 50px;
+    display: block;
+}
+
+/* グローバルナビゲーションの基本スタイル */
+ul.gnav-navi-1 {
+   background: #0a2f6f;
+   padding: 0;
+   text-align: center;
+   position: relative
+   list-style-type: none; /* リストスタイルを削除 */
+   margin: 0;
+   display: flex; /* フレックスボックスを使用 */
+   justify-content: space-between; /* アイテムを均等に配置 */
+   align-items: center; /* 垂直方向に中央揃え */
+   text-align: center; /* アイテム内のテキストを中央揃え */
+   width: 100%;
+}
+
+/* ナビゲーションメニューのアイテム */
+ul.gnav-navi-1 li {
+    flex: 1; /* 各アイテムが均等に幅を占める */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 垂直方向に中央揃え */
+    text-align: center; /* アイテム内のテキストを中央揃え */
+    position: relative; /* ドロップダウンメニューの位置指定 */
+}
+
+/* ナビゲーションメニュー内のリンク */
+ul.gnav-navi-1 a {
+    display: flex; /* フレックスボックスを使用 */
+    padding: 1em;
+    color: #fff;
+    align-items: center; /* リンク内のテキストを垂直に中央揃え */
+    text-align: center; /* アイテム内のテキストを中央揃え */
+    justify-content: center; /* リンク内のテキストを水平に中央揃え */
+    text-decoration: none;
+    white-space: nowrap; /* 折り返しを防ぐ */
+    transition: background-color 0.3s, color 0.3s; /* スムーズな色の変化 */
+}
+
+/* ドロップダウンメニュー */
+ul.dropdown__lists {
+    display: none; /* デフォルトでは非表示 */
+    position: absolute;
+    top: 100%; /* 親リストアイテムの下に表示 */
+    left: 0;
+    background: #0a2f6f;
+    width: 100%; /* ドロップダウンの幅を親アイテムに合わせる */
+    z-index: 1000; /* 必要に応じて調整 */
+}
+
+/* ドロップダウンメニューの各アイテム */
+ul.dropdown__lists li {
+    display: block;
+}
+
+ul.dropdown__lists li a {
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+/* ドロップダウンメニュー内のリンク */
+ul.dropdown__lists a {
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap; /* 折り返しを防ぐ */
+    display: flex;
+    align-items: center; /* ドロップダウン内のテキストを垂直に中央揃え */
+}
+
+/* ホーバー時のスタイル */
+ul.gnav-navi-1 a:hover {
+    background: #004080; /* ホーバー時の背景色 */
+    color: #fff; /* ホーバー時のフォント色 */
+}
+
+/* ホーバー状態でドロップダウンを表示 */
+ul.gnav-navi-1 li:hover > .dropdown__lists {
+    display: block; /* 子要素にホーバーしたときに表示 */
+}
+
+/* ハンバーガーメニュー */
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ハンバーガーメニューの表示/非表示 */
+#hamburger-menu-content {
+    display: none;
+    background: #0a2f6f;
+    width: 100%;
+}
+
+#hamburger-menu-content ul {
+    padding: 0;
+}
+
+#hamburger-menu-content li {
+    display: block;
+}
+
+/* スマホサイズの場合のメニュー表示 */
+@media (max-width: 768px) {
+    ul.gnav-navi-1 {
+        display: none; /* デフォルトでは非表示 */
+        flex-direction: column; /* 縦に並べる */
+    }
+
+    .hamburger-menu {
+        display: block; /* ハンバーガーメニューを表示 */
+    }
+
+    .nav-menu-open #nav-menu {
+        display: block;
+    }
+}
+ <!--以下グローバルメニュー ドロップ指定-->
+</style>
+<!--グローバルメニューCSSここまで-->

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table with UD Font</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <style>
+         /* 表のCSSここタイトル行の背景色 */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        table.d-han {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid orange;
+        }
+        table.d-han td, table.d-han th {
+            border: 1px solid orange;
+            padding: 5px;
+            text-align: center;
+            line-height: 1.25; /* 125% の行の高さ */
+        }
+         /* タイトル行の背景色 */
+                table.d-han tr:first-child {
+            background-color: #ff0000; /* タイトル行1の背景色 */
+            color: #FFFFFF; /* タイトル行1のフォントカラー */
+        }
+        table.d-han tr:nth-child(2) {
+            background-color: #d0e0f0; /* タイトル行2の背景色 */
+        }
+         /* タイトル行2の各セルに個別の背景色を設定 */
+                table.d-han tr:nth-child(2) td:nth-child(1) {
+            background-color: #ffcccc; /* 2行目1列目の背景色 */
+        }
+        table.d-han tr:nth-child(2) td:nth-child(2) {
+            background-color: #ffffcc; /* 2行目2列目の背景色 */
+        }
+        table.d-han tr:nth-child(2) td:nth-child(3) {
+            background-color: #ccffff; /* 2行目3列目の背景色 */
+        }
+        @media (max-width: 768px) {
+            table.d-han {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <table class="d-han">
+            <tr>
+                <th colspan="3"  tabindex="1">オンラインサービスの停止</td>
+             </tr>
+             <tr>
+                 <td tabindex="2"> 停止するサービス </td>
+                 <td tabindex="3"> 停止日時 </td>
+                 <td tabindex="4">再開日時</td>
+             </tr>
+             <tr>
+                <td tabindex="5">北海道大学蔵書目録(OPAC)</td>
+                <td tabindex="6">2024年8月30日(金)15:00</td>
+                <td tabindex="7">2024年9月2日(月)9:30頃</td>
+             </tr>
+             <tr>
+                 <td  tabindex="8">北海道大学蔵書目録(OPAC)</td>
+                 <td tabindex="9">2024年8月30日(金)15:00</td>
+                 <td tabindex="10">2024年9月2日(月)9:30頃</td>
+             </tr>
+        </table>
+    </div>
+</body>
+</html>
