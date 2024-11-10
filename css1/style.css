@@ -1,45 +1,60 @@
-.biz-udpgothic-regular {
-  font-family: "BIZ UDPGothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
 }
 
-.biz-udpgothic-bold {
-  font-family: "BIZ UDPGothic", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
+#header {
     width: 100%;
-    background-color: #fff; /* 背景色を設定 */
-    border-bottom: 1px solid #ccc; /* 下に境界線を追加 */
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影を追加して立体感を出す */
-    z-index: 1000; /* コンテンツの上に表示するために z-index を設定 */
-
-}
-.logo {
-    display: block;
-    justify-content: space-between; /* 左右にコンテンツを分けて配置 */
-    align-items: center; /* 縦方向に中央揃え */   
-}
-
-.logo-left, .logo-right {
-    width: auto; /* 幅は自動で調整 */
-    height: 80px; /* 高さは自動で調整 */
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+  }
+  #header .site-title {
+    padding: 20px 16px;
+    line-height: 1px;
+  }
+  /*
+  「display: inline-block;」でリンクを親要素の範囲に広げる
+  ※blockを指定すると横幅いっぱいまで広がってしまうため、
+  inline-blockを設定している
+  */
+  #header .site-title a {
+    display: inline-block;
+  }
+  #navi {
+    background-color: #333;
+  }
+  #navi a {
+    color: #fff;
+  }
+  #navi ul {
     display: flex;
-    align-items: center; /* 垂直方向に中央揃え */
-}
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #navi li {
+    font-size: 0.875rem;
+    padding: 10px 60px 10px 0;
+  }
+  
 
-.logo-left img, .logo-right img {
-    max-width: 100%; /* コンテナの幅に合わせて最大幅を設定 */
-    height: auto; /* 高さを自動で調整 */
-}
+
 
 <!--以下表CSS-->  
 <style>
