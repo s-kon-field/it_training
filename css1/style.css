@@ -42,44 +42,40 @@ li {
   #header .site-title a {
     display: inline-block;
   }
-  #navi {
+  nav	{
+    float: left;
     width: 100%;
-    background-color: #3d5a8a;
-    position: relative;
+    margin:20px 0 20px 0;
+  }
+  .mod_nav{
+    height:45px;
+    background-color: #0a2f6f;
+  }
+  .mod_nav p.navtitle{
+    display:none;
+  }
+  .mod_nav ul{
+    margin:0 auto;
+    width:880px;
+  }
+  .mod_nav ul li{
+    float:left;
+    line-height:45px;
+    text-align:center;
+    padding:0 20px 0 20px;
   }
   
-  #navi a {
-    color: #fff;
-    text-decoration: none;
+  .mod_nav ul li a{
+    display:block;
+    color:#FFF;
   }
-  
-  #navi ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  .mod_nav ul li.current a{
+    font-weight:bold;
   }
-  
-  #navi li {
-    font-size: 0.875rem;
-    padding: 10px 20px;
-  }
-  
-  /* ハンバーガーアイコン */
-  #hamburger {
-    display: none;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  /* メニューを隠す */
-  .hidden {
-    display: none;
-  }
+  .mod_nav ul li a:link    {color:#FFF; text-decoration:none;}
+  .mod_nav ul li a:visited {color:#FFF; text-decoration:none;}
+  .mod_nav ul li a:hover   {color:#FFF; text-decoration:none; background-color:#004080;}
+  .mod_nav ul li a:active  {color:#FFF; text-decoration:none; background: color #004080;}
   
   .honbun{
     margin-top: 200px;
@@ -297,21 +293,31 @@ ul.gnav-navi-1 li:hover > .dropdown__lists {
 /* スマホサイズの場合のメニュー表示 */
 /* スマホ画面でのスタイル */
 @media (max-width: 768px) {
-    #navi ul {
-      flex-direction: column;  /* メニュー項目を縦に並べる */
+    nav	{
+      float: left;
       width: 100%;
-      display: none; /* 初期状態ではメニューを非表示 */
-      position: absolute;
-      top: 50px; /* メニューをナビゲーションバーの下に配置 */
-      left: 0;
-      background-color: #3d5a8a;
+      margin-bottom:0px;
     }
-  
-    #hamburger {
-      display: block; /* ハンバーガーアイコンを表示 */
+    .mod_nav{height:auto;}
+    .mod_nav p.navtitle{
+      cursor:pointer;
+      display:block;
+      line-height:45px;
+      color:#FFF;
+      padding:0 0 0 50px;
+      font-size:110%;
+      font-weight:bold;
+      background:transparent url('/sample/008/img/bg_menu.jpg') no-repeat 9px 9px;
     }
-  
-    #navi ul.active {
-      display: flex; /* メニューを表示 */
+    .mod_nav ul{width:100%; display:none;}
+    .mod_nav ul li{float:none;}
+    .mod_nav ul li{
+      width:99%;
+      padding:0 0% 0 1%;
+      text-align:left;
+      background-color:#fa88b3;
+      border-bottom:solid 1px #f56b9f;
     }
-  }
+    .mod_nav ul li a{}
+    
+    }
