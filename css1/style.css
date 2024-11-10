@@ -30,11 +30,14 @@ li {
     background-color: #fff;
     position: fixed;
     z-index: 10;
+    margin-bottom: 30px;
   }
+
   #header .site-title {
-    padding: 20px 16px;
+    padding: 10px 16px;
     line-height: 1px;
   }
+ 
   /*
   「display: inline-block;」でリンクを親要素の範囲に広げる
   ※blockを指定すると横幅いっぱいまで広がってしまうため、
