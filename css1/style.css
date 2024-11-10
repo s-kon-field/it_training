@@ -30,7 +30,7 @@ li {
     background-color: #fff;
     position: fixed;
     z-index: 10;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
   #header .site-title {
@@ -47,6 +47,7 @@ li {
     display: inline-block;
   }
   #navi {
+    width: 100%;
     background-color: #3d5a8a;
   }
   #navi a {
@@ -54,7 +55,7 @@ li {
   }
   #navi ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
   #navi li {
@@ -66,6 +67,30 @@ li {
     margin-top: 200px;
   }
 
+  /* フッター */
+footer {
+    background-color: #e2e2e2;
+    color: black;
+    }
+    
+    .footer-menu {
+    height: 60px;
+    }
+    
+    .footer-menu-list {
+    list-style: none;
+    text-align: center;
+    line-height: 60px;
+    }
+    
+    .footer-menu-list li {
+    margin: 10px;
+    display: inline;
+    }
+    
+    .copyright {
+    text-align: center;
+    }
 
 
 <!--以下表CSS-->  
@@ -114,7 +139,6 @@ table.d-han td, table.d-han th {
     }
 </style>
 <!--表CSSここまで-->  
-
 
 <!--以下グローバルメニュー 修正-->
 
