@@ -45,18 +45,40 @@ li {
   #navi {
     width: 100%;
     background-color: #3d5a8a;
+    position: relative;
   }
+  
   #navi a {
     color: #fff;
+    text-decoration: none;
   }
+  
   #navi ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
+  
   #navi li {
     font-size: 0.875rem;
-    padding: 10px 60px 10px 0;
+    padding: 10px 20px;
+  }
+  
+  /* ハンバーガーアイコン */
+  #hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  /* メニューを隠す */
+  .hidden {
+    display: none;
   }
   
   .honbun{
@@ -273,20 +295,23 @@ ul.gnav-navi-1 li:hover > .dropdown__lists {
 }
 
 /* スマホサイズの場合のメニュー表示 */
+/* スマホ画面でのスタイル */
 @media (max-width: 768px) {
-    ul.gnav-navi-1 {
-        display: none; /* デフォルトでは非表示 */
-        flex-direction: column; /* 縦に並べる */
+    #navi ul {
+      flex-direction: column;  /* メニュー項目を縦に並べる */
+      width: 100%;
+      display: none; /* 初期状態ではメニューを非表示 */
+      position: absolute;
+      top: 50px; /* メニューをナビゲーションバーの下に配置 */
+      left: 0;
+      background-color: #3d5a8a;
     }
-
-    .hamburger-menu {
-        display: block; /* ハンバーガーメニューを表示 */
+  
+    #hamburger {
+      display: block; /* ハンバーガーアイコンを表示 */
     }
-
-    .nav-menu-open #nav-menu {
-        display: block;
+  
+    #navi ul.active {
+      display: flex; /* メニューを表示 */
     }
-}
- <!--以下グローバルメニュー ドロップ指定-->
-</style>
-<!--グローバルメニューCSSここまで-->
+  }

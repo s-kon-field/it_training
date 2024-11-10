@@ -9,20 +9,23 @@
 </head>
 
 <body>
-    <script src="js/script.js"></script>
     <header>
         <header id="header">
             <h1 class="site-title wrapper">
               <a href="#"><img src="img/logo3.jpg" alt="ロゴ"></a>
             </h1>
-            <nav id="navi">
-              <ul class="wrapper">
-                <li><a href="#">利用案内</a></li>
-                <li><a href="#">資料を探す</a></li>
-                <li><a href="#">図書館一覧</a></li>
-                <li><a href="#">アクセス</a></li>
-              </ul>
-            </nav>
+            <div id="navi">
+                <!-- ハンバーガーアイコン -->
+                <div id="hamburger" onclick="toggleMenu()">
+                  &#9776; <!-- ハンバーガーアイコン（3本線） -->
+                </div>
+                <ul id="menu" class="hidden">
+                  <li><a href="#">利用案内</a></li>
+                  <li><a href="#">資料を探す</a></li>
+                  <li><a href="#">図書館一覧</a></li>
+                  <li><a href="#">アクセス</a></li>
+                </ul>
+              </div>
           </header>
 
     <div class="honbun">
@@ -128,7 +131,6 @@
     　　<ul class="footer-menu-list">
     　　　<li><a href="#" id="page-top"><i class="blogicon-chevron-up"></i>トップへ戻る</a></li>
     　　　<li><a href="#">お問い合わせ</a></li>
-    　　　<li><a href="#">サイトマップ</a></li>
     　　</ul>
     　</div>
     　<div class="copyright">
@@ -136,6 +138,6 @@
     　</div>
     </footer>
 
-
+ <script src="js/script.js"></script>
 </body>
 </html>
