@@ -69,6 +69,7 @@ li {
 
   /* フッター */
 footer {
+    margin-top: 50px;
     background-color: #e2e2e2;
     color: black;
     }
