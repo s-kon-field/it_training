@@ -93,9 +93,7 @@ footer {
 <!--以下表CSS-->  
 <style>
      /* 表のCSSここタイトル行の背景色 */
-    body {
-        font-family: 'Noto Sans JP', sans-serif;
-    }
+    
     table.d-han {
         border-collapse: collapse;
         width: 100%;
@@ -141,9 +139,6 @@ table.d-han td, table.d-han th {
 
 <style>
 /* 基本スタイル */
-body {
-    font-family: 'Noto Sans JP', sans-serif;
-}
 
 /* ヘッダーのスタイル */
 header {
